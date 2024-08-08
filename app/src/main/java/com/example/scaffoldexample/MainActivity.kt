@@ -81,9 +81,8 @@ fun ScaffoldExample() {
         }
     ) { innerPadding ->
         Column(
-            modifier = Modifier
-                .padding(innerPadding),
-            verticalArrangement = Arrangement.spacedBy(16.dp),
+            modifier = Modifier.padding(innerPadding),
+            verticalArrangement = Arrangement.spacedBy(16.dp)
         ) {
             Text(
                 modifier = Modifier.padding(8.dp),
@@ -94,12 +93,14 @@ fun ScaffoldExample() {
                     You have pressed the floating action button $presses times.
                 """.trimIndent(),
             )
+            Text(text = "More content")
         }
     }
 }
 
 @Composable
 fun MyButtonBar() {
+    // https://developer.android.com/develop/ui/compose/components/app-bars#bottom
     BottomAppBar(
         actions = {
             IconButton(onClick = { /* do something */ }) {
@@ -141,7 +142,7 @@ fun MyButtonBar() {
 
 @Preview(showBackground = true)
 @Composable
-fun GreetingPreview() {
+fun ScaffoldPreview() {
     ScaffoldExampleTheme {
         ScaffoldExample()
     }

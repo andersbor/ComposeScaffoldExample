@@ -68,5 +68,5 @@ dependencies {
     debugImplementation(libs.androidx.ui.test.manifest)
 
     // https://stackoverflow.com/questions/65665563/android-jetpack-compose-icons-doesnt-contain-some-of-the-material-icons
-    implementation ("androidx.compose.material:material-icons-extended:1.6.7")
+    implementation ("androidx.compose.material:material-icons-extended:1.6.8")
 }
